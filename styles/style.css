@@ -1,0 +1,119 @@
+/*......Home page......*/
+#header{
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+header > h1 {
+    font-size: 3rem;
+        margin: auto;
+        padding: auto;
+        text-shadow: beige 2px 2px;
+    
+  }
+header > h4 {
+    font-size: rem;
+        margin: auto;
+        padding: auto;
+      }
+.subtitle {
+    grid-column: 3/5;
+    border-radius: 5px;
+    text-align: center;
+  }
+#images{
+    display: grid;
+    max-width:1200px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+
+    background-color: rgb(255, 250, 247, 0.5);
+    margin: 10px;
+}
+
+.img-container{
+    position: relative;
+    top: -10px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px 5px 5px black;
+    
+    background-color: #282120;
+    border: 5px solid #282120;
+    border-radius: 5%;
+    color: #E6C2BF;
+    padding-top: 20px;
+   
+}
+.img-container .text{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    text-align: center;
+    width: 50%;
+ } 
+ figcaption {
+    padding: 10px 0 10px 0;
+    font-size: 1.2em;
+  }
+  
+  
+.tell-more{
+    display:inline-block;
+    width: 80;
+    height: 40;
+    border-radius: 5px;
+    background-color: burlywood;
+    font-size: 14px;
+    font-style: bold;
+    justify-content: center;
+ }
+ .tell-more:hover{
+    cursor:pointer;
+    background-color: green;
+    color:rgb(255, 255, 255);
+ }
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 50px;
+    background: #eee;
+    border-radius: 5px;
+}
+#main{
+    display:flex;
+    justify-content: space-around;
+}
+article{
+    width:30vw;
+    margin-right: 10w ;
+}
+article h4{
+    font-size: rem;
+        margin: auto;
+        padding: auto;
+}
+#main-concept{
+    display: flex;
+    flex-direction: column;
+  justify-content: space-between;
+}
+.blog-image{
+    display: flex;
+    position: relative;
+    z-index: 10vw;
+    
+}
+article p{
+    display:inline-block;
+text-align: justify;
+flex:wrap;
+}
+
+
