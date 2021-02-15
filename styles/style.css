@@ -270,3 +270,41 @@ blockquote p {
   margin-right: 10vw;
 }
 
+/*-------Animation-------*/
+#anim-container {
+  position:relative;
+  height: 20vh;
+  width:50vw;
+  border: 2px solid rgb(13, 13, 14);
+  background-color:rgb(117, 43, 43);
+}
+#ayurveda_love {
+  position: absolute; /*... change the position with rite properties, which preserves position of other items around them*/
+  animation: left_to_right 10s linear infinite alternate; /*...animation name, time, what type of animation, hoe many times to repeat, when it comes to end alternate direction...*/
+}
+#ayurveda_love p{
+animation: left_to_right 10s ease;
+font: 25px solid red;
+text-align: center;
+text-shadow: cadetblue;
+
+}
+@keyframes left_to_right {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes right_to_left {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+
