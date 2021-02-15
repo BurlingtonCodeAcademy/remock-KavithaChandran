@@ -14,11 +14,18 @@ body {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
 }
-header a:link {
-  cursor: pointer;
-  text-decoration: none;
-  color: hotpink;
-}
+
+a {
+    cursor: pointer;
+    color: inherit;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:hover{
+    color:blueviolet;
+    }
 h1 {
   font: 50px bold;
   margin: auto;
@@ -169,15 +176,19 @@ blockquote p {
 /*-----Blog Post Page-----*/
 
 #main .blog_post_page {
+  width: 50vw;
   margin-right: 10vw;
 }
 #main .blog_post_page h4 {
   text-align: center;
 }
 #main .blog-post-page img {
-  border: 3px solid rgba(168, 168, 167, 0.4);
   width: 60vw;
 }
+.contact_address{
+  text-align: left;
+}
+
 
 /*------Cont Reading Page------*/
 #main .cont_reading_page {
@@ -189,6 +200,13 @@ blockquote p {
 #main .learn_more_page {
   display: flex;
   flex-direction: column;
+}
+#learn_more_left {
+  width: 10vw;
+  margin-left: 10vw;
+}
+#learn_more_right {
+  width: 60vw;
 }
 
 /*-----Footer-------*/
@@ -219,6 +237,12 @@ blockquote p {
 #footer_content {
   width: 65vw;
   margin: auto;
+}
+.footer_form{
+
+  width:55vw;
+  margin-left: 15vw;
+  text-align: center;
 }
 
 /*----Organization of footer elements*/
