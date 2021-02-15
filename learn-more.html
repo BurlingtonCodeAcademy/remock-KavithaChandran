@@ -113,7 +113,7 @@
           <h2>Welcome to the Blog Post page layout</h2>
         </section>
 
-        <img src='\images\ayurvedic-2.jpg' alt="Healthy" width="580" height="300"/>
+        <img src='\images\ayurvedic-2.jpg' alt="Healthy" width="580" height="300" />
         <article>
           <h3>Right is also not left</h3>
           <p>Lorem ipsum dolor sit amet consectetur
@@ -226,51 +226,54 @@
   <!-------Footer-------->
   <section id="footer">
     <div class="footer">
-      <h2>Questions or comments? Get in Touch</h2>
+      <h2>Questions or Comments? Get in Touch</h2>
 
       <!----Contact Form-->
       <section id="footer_content">
-        <div class="row">
-          <div class="column">
-            <input type="text" class="form-control" placeholder="Name">
-            <input type="email" class="form-control" placeholder="Email address">
-            <textarea rows="6" placeholder="Message" cols="40"></textarea>
-            <div>
-              <button class="send-message">Send Message</button>
+        <form onsubmit="alert('Message Received');return false">
+          <div class="row">
+            <div class="column">
+              <input type="text" class="form-control" placeholder="Name" required>
+              <input type="email" class="form-control" placeholder="Email address">
+              <textarea rows="6" placeholder="Message" cols="40"></textarea>
+
+              <input type="submit" class="send-message" value="Send Message" />
+            </div>
+        </form>
+        <!------Social Media and Contact details------>
+        <div id="contact_info">
+          <p class='footer-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt commodi impedit
+            quidem saepe similique consequatur?</p>
+
+          <div class='left_contact'>
+
+            <div><img src="\images\address.svg"><a href="Find us here">
+                <p>1234 Somewhere Road<br>Burlington,VT 00000<br>USA</p>
+              </a></div>
+            <div><img src="\images\phone.svg"><a href="Reach@">
+                <p>(000)-000-0000</p>
+              </a></div>
+            <div><img src="\images\email.svg"><a href="mailto:hege@example.com">contact@example.com</a></div>
+
+          </div>
+          <!--Social Media platform---->
+          <div class="social_contact">
+            <div class="column">
+              <div><img src="\images\twitter.svg">Twitter</div>
+              <div><img src="\images\insta.svg">Instagram</div>
+              <div><img src="\images\facebook.svg">Facebook</div>
+              <div><img src="\images\linkedIn.svg">Linkedin</div>
             </div>
           </div>
-          <!------Social Media and Contact details------>
-          <div id="contact_info">
-            <p class='footer-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt commodi impedit
-              quidem saepe similique consequatur?</p>
-
-            <div class='left_contact'>
-
-              <div><img src="\images\address.svg"><a href="Find us here">
-                  <p>1234 Somewhere Road<br>Burlington,VT 00000<br>USA</p>
-                </a></div>
-              <div><img src="\images\phone.svg"><a href="Reach@">
-                  <p>(000)-000-0000</p>
-                </a></div>
-              <div><img src="\images\email.svg"><a href="mailto:hege@example.com">contact@example.com</a></div>
-
-            </div>
-            <!--Social Media platform---->
-            <div class="social_contact">
-              <div class="column">
-                <div><img src="\images\twitter.svg">Twitter</div>
-                <div><img src="\images\insta.svg">Instagram</div>
-                <div><img src="\images\facebook.svg">Facebook</div>
-                <div><img src="\images\linkedIn.svg">Linkedin</div>
-              </div>
       </section>
     </div>
   </section>
-  <div class ="attribution">
+  <div class="attribution">
     Icons by <a href="https://freeicons.io/line-hero-essentials/essentials-phone-call-icon-20476">wishforge</a>
     <a href="https://freeicons.io/co-working-and-office/letter-email-icon-1220">icon king1</a>
-    <a href="https://freeicons.io/profile/823"><Muhammad Haq/a>
-  </section>
+    <a href="https://freeicons.io/profile/823">
+      Muhammad Haq</a>
+    </section>
 </body>
 
 </html>

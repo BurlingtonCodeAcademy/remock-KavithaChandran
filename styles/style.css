@@ -15,17 +15,6 @@ body {
   text-align: center;
 }
 
-a {
-    cursor: pointer;
-    color: inherit;
-  }
-  a:link {
-    text-decoration: none;
-  }
-  
-  a:hover{
-    color:blueviolet;
-    }
 h1 {
   font: 50px bold;
   margin: auto;
@@ -41,10 +30,26 @@ h2 {
   text-align: left;
   position: relative;
 }
+/*---- link color and hover assignment..*/
+a h1{
+  cursor: pointer;
+  color:rgb(163, 161, 161);
+}
+a:link {
+  text-decoration: none;
+}
+
+a:hover{
+  color:rgb(83, 31, 228);
+  }
+
+  /*-----Subtitle are the page topic----*/
 .subtitle {
   text-align: center;
   padding-top: 20px;
 }
+
+/*-----images in the top header placed using grids----*/
 #images {
   display: grid;
   max-width: 1800px;
@@ -61,18 +66,19 @@ h2 {
 .caption {
   display: block;
 }
-
+/*------ Quotes block assignment---*/
 blockquote {
   margin: 0;
 }
 
 blockquote p {
   padding: 50px;
-  background: rgb(63, 62, 62);
+  background: rgb(116, 114, 114);
   border-radius: 5px;
   text-align: center;
   font-size: 50px;
 }
+/*-- Main content on the page -----*/
 #main {
   display: flex;
   justify-content: space-around;
@@ -89,8 +95,7 @@ blockquote p {
 .main-img {
   width: 40vw;
   height: 10vh;
-  border: 3px solid red;
-}
+ }
 
 #main.blog-post {
   display: inline-block;
@@ -98,7 +103,7 @@ blockquote p {
   background-color: burlywood;
   font: 15px bold;
 }
-/*----side-column------*/
+/*----side-column with  blog post and pictures------*/
 #side-bar {
   width: 20vw;
   text-align: left;
@@ -120,26 +125,26 @@ blockquote p {
   width: 7vw;
 }
 
-/*-----buttons------*/
+/*----- styling for all Buttons grouped together------*/
 .tell-more {
   display: inline-block;
   width: 15vw;
   border-radius: 10px;
-  background-color: burlywood;
+  background-color: rgb(187, 165, 137);
 
   font: 20px bold;
   justify-content: center;
 }
 .tell-more:hover {
   cursor: pointer;
-  background-color: cornflowerblue;
+  background-color: rgb(45, 94, 185);
   color: rgb(255, 255, 255);
 }
 .continue-reading {
   display: inline-block;
   width: 20vw;
   border-radius: 10px;
-  background-color: burlywood;
+  background-color:rgb(187, 165, 137);
   font: 15px bold;
   justify-content: left;
 }
@@ -151,7 +156,7 @@ blockquote p {
 .learn-more {
   display: inline-block;
   border-radius: 10px;
-  background-color: burlywood;
+  background-color:rgb(187, 165, 137);
   font: 15px bold;
   justify-content: left;
 }
@@ -163,7 +168,7 @@ blockquote p {
 .send-message {
   display: inline-block;
   border-radius: 10px;
-  background-color: burlywood;
+  background-color:rgb(187, 165, 137);
   font: 15px bold;
   justify-content: left;
 }
@@ -203,7 +208,7 @@ blockquote p {
 }
 #learn_more_left {
   width: 10vw;
-  margin-left: 10vw;
+  margin-left: 5vw;
 }
 #learn_more_right {
   width: 60vw;
@@ -245,7 +250,7 @@ blockquote p {
   text-align: center;
 }
 
-/*----Organization of footer elements*/
+/*----Styling and Organization of footer elements----*/
 .left_contact img,
 .social_contact img {
   width: 1em;
@@ -264,3 +269,4 @@ blockquote p {
   margin-top: -155px;
   margin-right: 10vw;
 }
+
