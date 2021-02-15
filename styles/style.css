@@ -2,8 +2,8 @@
 
 body {
   background-color: cadetblue;
-  
-  margin:50px 100px 50px 100px;
+
+  margin: 50px 100px 50px 100px;
 }
 .line-break {
   content: " ";
@@ -28,9 +28,11 @@ h1 {
 h6 {
   margin: -15px;
   padding: auto;
+  position: relative;
 }
-h2{
-    text-align: left;
+h2 {
+  text-align: left;
+  position: relative;
 }
 .subtitle {
   text-align: center;
@@ -80,19 +82,22 @@ blockquote p {
 .main-img {
   width: 40vw;
   height: 10vh;
+  border: 3px solid red;
 }
 
-.blog-post {
+#main.blog-post {
   display: inline-block;
   border-radius: 10px;
   background-color: burlywood;
   font: 15px bold;
 }
+/*----side-column------*/
 #side-bar {
   width: 20vw;
   text-align: left;
   margin-right: 12vw;
   margin-left: 20px;
+  flex-direction: column;
 }
 .top-blog {
   text-align: justify;
@@ -120,7 +125,7 @@ blockquote p {
 }
 .tell-more:hover {
   cursor: pointer;
-  background-color: green;
+  background-color: cornflowerblue;
   color: rgb(255, 255, 255);
 }
 .continue-reading {
@@ -133,7 +138,7 @@ blockquote p {
 }
 .continue-reading:hover {
   cursor: pointer;
-  background-color: green;
+  background-color: cornflowerblue;
   color: rgb(255, 255, 255);
 }
 .learn-more {
@@ -145,15 +150,21 @@ blockquote p {
 }
 .learn-more:hover {
   cursor: pointer;
-  background-color: green;
+  background-color: cornflowerblue;
   color: rgb(255, 255, 255);
 }
-
-#footer {
-  background-color: grey;
-  display: flex;
+.send-message {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: burlywood;
+  font: 15px bold;
+  justify-content: left;
 }
-
+.send-message:hover {
+  cursor: pointer;
+  background-color: cornflowerblue;
+  color: rgb(255, 255, 255);
+}
 
 /*-----Blog Post Page-----*/
 
@@ -175,8 +186,54 @@ blockquote p {
 }
 
 /*------Learn More Page------*/
-#main .learn_more_page{
-    display: flex;
+#main .learn_more_page {
+  display: flex;
   flex-direction: column;
 }
 
+/*-----Footer-------*/
+#footer {
+  display: flex;
+  background-color: grey;
+  height: 40vh;
+  flex-direction: column;
+}
+
+#footer h2 {
+  text-align: center;
+  position: relative;
+}
+/*----contact-form in the footer---*/
+.column {
+  float: left;
+  width: 40%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*----Address and social media in footer------*/
+#footer_content {
+  width: 65vw;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  margin: auto;
+}
+
+/*----Organization of footer elements*/
+.left_contact img,
+.social_contact img {
+  width: 1em;
+  height: 1em;
+}
+.left_contact div,
+.social_contact div {
+  margin: 12px;
+}
+.left_contact p
+ {
+  display: inline;
+}
