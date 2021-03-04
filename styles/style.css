@@ -2,13 +2,18 @@
 
 body {
   background-color: cadetblue;
-
-  margin: 50px 100px 50px 100px;
 }
 .line-break {
-  content: " ";
-  display: block;
+  display: flex;
+  justify-content: center;
   border: 1px solid grey;
+}
+.double-line {
+  display: inline-block;
+  height: 2px;
+  width: 60vw;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 #header {
   font-family: "Times New Roman", Times, serif;
@@ -31,19 +36,22 @@ h2 {
   position: relative;
 }
 /*---- link color and hover assignment..*/
-a h1{
+a {
+  color: inherit;
+}
+a h1 {
   cursor: pointer;
-  color:rgb(163, 161, 161);
+  color: rgb(49, 22, 197);
 }
 a:link {
   text-decoration: none;
 }
 
-a:hover{
-  color:rgb(83, 31, 228);
-  }
+a:hover {
+  color: rgb(83, 31, 228);
+}
 
-  /*-----Subtitle are the page topic----*/
+/*-----Subtitle are the page topic----*/
 .subtitle {
   text-align: center;
   padding-top: 20px;
@@ -56,6 +64,7 @@ a:hover{
   grid-template-columns: repeat(3, 250px);
   grid-gap: 25px;
   justify-content: center;
+  margin-right: 70px;
 }
 .img-container .text {
   position: absolute;
@@ -65,6 +74,7 @@ a:hover{
 }
 .caption {
   display: block;
+  margin-left: 60px;
 }
 /*------ Quotes block assignment---*/
 blockquote {
@@ -95,7 +105,7 @@ blockquote p {
 .main-img {
   width: 40vw;
   height: 10vh;
- }
+}
 
 #main.blog-post {
   display: inline-block;
@@ -108,7 +118,7 @@ blockquote p {
   width: 20vw;
   text-align: left;
   margin-right: 12vw;
-  margin-left: 20px;
+  margin-left: 30px;
   flex-direction: column;
 }
 .top-blog {
@@ -144,7 +154,7 @@ blockquote p {
   display: inline-block;
   width: 20vw;
   border-radius: 10px;
-  background-color:rgb(187, 165, 137);
+  background-color: rgb(187, 165, 137);
   font: 15px bold;
   justify-content: left;
 }
@@ -156,7 +166,7 @@ blockquote p {
 .learn-more {
   display: inline-block;
   border-radius: 10px;
-  background-color:rgb(187, 165, 137);
+  background-color: rgb(187, 165, 137);
   font: 15px bold;
   justify-content: left;
 }
@@ -168,7 +178,7 @@ blockquote p {
 .send-message {
   display: inline-block;
   border-radius: 10px;
-  background-color:rgb(187, 165, 137);
+  background-color: rgb(187, 165, 137);
   font: 15px bold;
   justify-content: left;
 }
@@ -181,19 +191,16 @@ blockquote p {
 /*-----Blog Post Page-----*/
 
 #main .blog_post_page {
-  width: 50vw;
+  width: 60vw;
   margin-right: 10vw;
 }
 #main .blog_post_page h4 {
   text-align: center;
 }
-#main .blog-post-page img {
-  width: 60vw;
-}
-.contact_address{
+
+.contact_address {
   text-align: left;
 }
-
 
 /*------Cont Reading Page------*/
 #main .cont_reading_page {
@@ -217,8 +224,8 @@ blockquote p {
 /*-----Footer-------*/
 #footer {
   display: flex;
-  background-color: rgb(163, 161, 161);
-  height: 40vh;
+  background-color: rgb(89, 118, 119);
+  padding-top: 10px;
   flex-direction: column;
 }
 
@@ -229,33 +236,40 @@ blockquote p {
 /*----contact-form in the footer---*/
 .column {
   float: left;
-  width: 40%;
-  padding: 10px;
+  width: 50%;
+  padding: 30px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.footer-message {
+  margin-top: 10px;
+}
+
+.form_input {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
 }
 /*----Address and social media in footer------*/
 #footer_content {
-  width: 65vw;
+  width: 100%;
   margin: auto;
 }
-.footer_form{
-
-  width:55vw;
+.footer_form {
+  width: 55vw;
   margin-left: 15vw;
   text-align: center;
 }
-
+.form-control {
+  justify-content: left;
+}
 /*----Styling and Organization of footer elements----*/
 .left_contact img,
 .social_contact img {
-  width: 1em;
-  height: 1em;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
 }
+
 .left_contact div,
 .social_contact div {
   margin: 12px;
@@ -266,32 +280,35 @@ blockquote p {
 .social_contact .column {
   float: right;
   width: 10vw;
-  margin-top: -155px;
-  margin-right: 10vw;
+  margin-top: -175px;
+  margin-right: -10vw;
 }
 
+/*---Attributes------*/
+.attribution {
+  font-size: 0.01rem;
+}
 /*-------Animation-------*/
 #anim-container {
-  position:relative;
+  position: relative;
   height: 20vh;
-  width:50vw;
+  width: 60vw;
   border: 2px solid rgb(13, 13, 14);
-  background-color:rgb(117, 43, 43);
+  background-color:rgb(50, 161, 161);
 }
 #ayurveda_love {
   position: absolute; /*... change the position with rite properties, which preserves position of other items around them*/
   animation: left_to_right 10s linear infinite alternate; /*...animation name, time, what type of animation, hoe many times to repeat, when it comes to end alternate direction...*/
 }
-#ayurveda_love p{
-animation: left_to_right 10s ease;
-font: 25px solid red;
-text-align: center;
-text-shadow: cadetblue;
-
+#ayurveda_love p {
+  animation: left_to_right 10s ease;
+  font: 25px solid red;
+  text-align: center;
+  text-shadow: cadetblue;
 }
 @keyframes left_to_right {
   from {
-    margin-left: 100%;
+    margin-left: 80%;
   }
   to {
     margin-left: 0;
@@ -306,5 +323,13 @@ text-shadow: cadetblue;
     margin-left: 0;
   }
 }
-
-
+/*-----audio------*/
+.audio {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  max-width: 100%;
+  height: 290px;
+  z-index: 999;
+}

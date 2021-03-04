@@ -15,27 +15,25 @@
       <a href="/index.html">
         <h1>Learn More Page</h1>
       </a>
-      <h6>The page for specific</h6>
+      <h4>The page for specific</h4>
     </header>
-    <br>
-    <br>
+
     <!---Line Break---->
     <section class="line-break">
       <div class="double-line"></div>
-    </section><br>
+    </section>
     <section class="line-break">
       <div class="double-line"></div>
     </section>
-    <br>
   </section>
-
+  <!----------------------------side-bar---------------------------------->
   <section id="main">
     <!---Main Blog   article Page -->
     <section id=learn_more_left>
       <!----Side bar with Articles-->
       <div id="side-bar">
         <section class="top-blog">
-          <br>
+          <!----------------------------side-bar posts------------------------>
           <a href="/blog-post.html">
             <button class="blog-post">July 30</button></a>
           <h5>Just another post</h5>
@@ -45,8 +43,7 @@
           <section class="line-break">
             <div class="double-line"></div>
           </section>
-          <br>
-          <br>
+
           <a href="/blog-post.html">
             <button class="blog-post">July 28</button></a>
           <h5>And another post</h5>
@@ -57,28 +54,32 @@
           <section class="line-break">
             <div class="double-line"></div>
           </section>
-          <br>
-          <br>
+
           <a href="/blog-post.html">
             <button class="blog-post">July 24</button></a>
-          <h5>One more post</h5>
+          <a href="/blog-post.html">
+            <h5>One more post</h5>
+          </a>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus similique voluptatem asperiores molestiae
             at aperiam a odit sequi omnis officiis!</p>
           <a href="/blog-post.html">
             <button class="blog-post">July 24</button></a>
-          <h5>One more post</h5>
+          <a href="/blog-post.html">
+            <h5>One more post</h5>
+          </a>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit error ab consequatur excepturi molestiae
             suscipit a sequi cupiditate non. Porro culpa odit necessitatibus earum blanditiis magni, veritatis maxime
             eum incidunt, dicta modi omnis fugiat ipsum quos doloremque quasi animi, consequuntur cumque sequi nulla
             aperiam officia placeat? Ducimus quae voluptatum nostrum.</p>
+
           <section class="line-break">
             <div class="double-line"></div>
           </section>
           <section class="line-break">
             <div class="double-line"></div>
           </section>
-          <br>
-          <br>
+
+
         </section>
         <!---- Bottom of Side-bar Blog with article and picture wraps -->
         <section id="bottom-blog">
@@ -87,8 +88,8 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae soluta quibusdam accusamus culpa, eum ipsa
             ratione explicabo esse! Quos, similique!</p>
           <a href="/learn-more.html">
-            <button class="learn-more">Learn more</button><br></a>
-          <br>
+            <button class="learn-more"><span>Learn more</span></button></a>
+
           <section class="line-break">
             <div class="double-line"></div>
           </section>
@@ -100,7 +101,7 @@
             impedit cum perferendis. Porro odio explicabo, voluptatum quos id maxime provident.</p>
 
           <a href="/learn-more.html">
-            <button class="learn-more">Learn more</button></a>
+            <button class="learn-more"><span>Learn more</span></button></a>
       </div>
       </div>
 
@@ -110,7 +111,7 @@
       <div id="main-content">
 
         <section class="subtitle">
-          <h2>Welcome to the Blog Post page layout</h2>
+          <h2>Welcome to the Blog of Home Remedies</h2>
         </section>
 
         <img src='\images\ayurvedic-2.jpg' alt="Healthy" width="580" height="300" />
@@ -226,19 +227,19 @@
   <!-------Footer-------->
   <section id="footer">
     <div class="footer">
-      <h2>Questions or Comments? Get in Touch</h2>
+      <h2>Questions or Comments? Get in Touch:</h2>
 
       <!----Contact Form-->
       <section id="footer_content">
-        <form onsubmit="alert('Message Received');return false">
+        <form class='form_input' onsubmit="alert('Message Received');return false">
           <div class="row">
             <div class="column">
-              <input type="text" class="form-control" placeholder="Name" required>
-              <input type="email" class="form-control" placeholder="Email address">
-              <textarea rows="6" placeholder="Message" cols="40"></textarea>
-
+              <input type="text" class="form-control" size="24" placeholder="Name" required>
+              <input type="email" class="form-control" size="24" placeholder="Email address">
+              <textarea rows="7" class="footer-message" placeholder="Message" cols="48"></textarea>
               <input type="submit" class="send-message" value="Send Message" />
             </div>
+
         </form>
         <!------Social Media and Contact details------>
         <div id="contact_info">
@@ -248,12 +249,14 @@
           <div class='left_contact'>
 
             <div><img src="\images\address.svg"><a href="Find us here">
-                <p>1234 Somewhere Road<br>Burlington,VT 00000<br>USA</p>
+                <p class='address'>1234 Somewhere Road<br>Burlington,VT 00000<br>USA</p>
               </a></div>
             <div><img src="\images\phone.svg"><a href="Reach@">
-                <p>(000)-000-0000</p>
+                <p class='address'>(000)-000-0000</p>
               </a></div>
-            <div><img src="\images\email.svg"><a href="mailto:hege@example.com">contact@example.com</a></div>
+            <div><img src="\images\email.svg"><a href="mailto:hege@example.com">
+                <p class='address'>contact@example.com</p>
+              </a></div>
 
           </div>
           <!--Social Media platform---->
@@ -265,15 +268,16 @@
               <div><img src="\images\linkedIn.svg">Linkedin</div>
             </div>
           </div>
+        </div>
       </section>
-    </div>
+
+      <div class="attribution">
+        Icons by <a href="https://freeicons.io/line-hero-essentials/essentials-phone-call-icon-20476">wishforge</a>
+        <a href="https://freeicons.io/co-working-and-office/letter-email-icon-1220">icon king1</a>
+        <a href="https://freeicons.io/profile/823">
+          Muhammad Haq</a>
+      </div>
   </section>
-  <div class="attribution">
-    Icons by <a href="https://freeicons.io/line-hero-essentials/essentials-phone-call-icon-20476">wishforge</a>
-    <a href="https://freeicons.io/co-working-and-office/letter-email-icon-1220">icon king1</a>
-    <a href="https://freeicons.io/profile/823">
-      Muhammad Haq</a>
-    </section>
 </body>
 
 </html>
