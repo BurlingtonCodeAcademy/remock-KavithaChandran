@@ -294,7 +294,7 @@ blockquote p {
   height: 20vh;
   width: 60vw;
   border: 2px solid rgb(13, 13, 14);
-  background-color:rgb(50, 161, 161);
+  background-color: rgb(50, 161, 161);
 }
 #ayurveda_love {
   position: absolute; /*... change the position with rite properties, which preserves position of other items around them*/
